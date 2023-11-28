@@ -4,8 +4,8 @@
 This project uses NLP techniques to build a spam SMS classifier. The model, based on TF-IDF and Naive Bayes, distinguishes between spam and legitimate messages.
 
 ### Files
-spam_detection.ipynb: Jupyter Notebook for code and analysis. \n
-spam.csv: Dataset with labeled SMS messages.
+-- spam_detection.ipynb: Jupyter Notebook for code and analysis.
+-- spam.csv: Dataset with labeled SMS messages.
 ### Setup Libraries:
 pip install pandas scikit-learn nltk numpy
 ### Dataset:
