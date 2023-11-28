@@ -42,4 +42,30 @@ TF-IDF is used to convert plot summaries into numerical features.
 The SVM classifier with a linear kernel is employed for genre prediction.  
 The model is trained on the provided training dataset and tested on a separate test dataset.  
 User interaction is implemented to input a movie description and obtain the predicted genre.  
-Feel free to explore and modify the notebook for further analysis or improvement of the movie genre classification model.  
+
+
+## Churn Prediction with Random Forest
+### Overview
+This project is dedicated to predicting customer churn using machine learning techniques. The model is trained on a dataset containing customer information, and the Random Forest algorithm is employed for classification.
+### Files
+churn_prediction.ipynb: Jupyter Notebook containing the code and analysis.  
+Churn_Modelling.csv: Dataset with customer information.  
+### Setup Libraries
+Ensure you have the necessary libraries installed:  
+pip install pandas scikit-learn imbalanced-learn  
+### Data Exploration and Preprocessing
+Irrelevant columns (RowNumber, CustomerId, Surname) are dropped.  
+Categorical variables (Geography, Gender) are converted to numerical using one-hot encoding.  
+The dataset is split into features (X) and the target variable (y).  
+Imbalanced data is handled using SMOTE (Synthetic Minority Over-sampling Technique).  
+The data is split into training and testing sets.  
+Model Training and Evaluation  
+### Random Forest
+A Random Forest classifier is trained on the resampled data.  
+Grid search is used for hyperparameter tuning.  
+Model performance is evaluated using accuracy, confusion matrix, and classification report.  
+
+### User Input for Churn Prediction
+User input is accepted for relevant features.  
+The input is converted to a DataFrame and standardized.  
+Predictions are made on the user input, and the churn status is displayed.  
